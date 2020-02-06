@@ -1,14 +1,14 @@
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class java_queue {
+public class java_threads {
     public static void main(String[] args) {
-        List < Integer > deck = Arrays.asList(1, 1, 11, 11, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 8, 9, 9, 9, 9, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10);
+        List< Integer > deck = Arrays.asList(1, 1, 11, 11, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 8, 9, 9, 9, 9, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10);
         int max = 51;
         int min = 0;
 
 
-        Queue < Double > theDeck = new LinkedList < > ();
+        Queue< Double > theDeck = new LinkedList< >();
 
         for (int count = 0; count <= 25; count++) {
             int cardNumber = ThreadLocalRandom.current().nextInt(min, max + 1);
@@ -17,7 +17,7 @@ public class java_queue {
         }
 
         //System.out.println(theDeck);
-        List < Double > dealerHand = new ArrayList < > ();
+        List < Double > dealerHand = new ArrayList< >();
         double dealerDraw1 = theDeck.remove();
         dealerHand.add(dealerDraw1);
         double dealerDraw2 = theDeck.remove();
